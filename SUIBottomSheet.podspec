@@ -6,6 +6,14 @@
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
 #
 
+# Workaround for Cocoapods issue #7606
+#post_install do |installer|
+#    installer.pods_project.build_configurations.each do |config|
+#        config.build_settings.delete('CODE_SIGNING_ALLOWED')
+#        config.build_settings.delete('CODE_SIGNING_REQUIRED')
+#    end
+#end
+
 Pod::Spec.new do |s|
   s.name             = 'SUIBottomSheet'
   s.version          = '0.1.0'
@@ -30,8 +38,8 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '13.0'
 
-  s.source_files = 'SUIBottomSheet/Classes/**/*'
-  s.resource_bundles = { 'SUIBottomSheet' => ['SUIBottomSheet/BottomSheet.bundle/**/*.*'] }
+  s.source_files = 'Source/**/*'
+  s.resource_bundles = { 'BottomSheet' => ['SUIBottomSheet/BottomSheet.bundle/**/*.*'] }
   # s.resource_bundles = {
   #   'SUIBottomSheet' => ['SUIBottomSheet/Assets/*.png']
   # }
