@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SUIBottomSheet_Example' do
+  pod 'SUIBottomSheet', :path => '../'
+
+  target 'SUIBottomSheet_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
