@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Source/**/*'
   s.resource_bundles = { 'BottomSheet' => ['Source/BottomSheet.bundle/**'] }
-  spec.swift_version = '5.0'
+  s.swift_version = '5.0'
   # s.resource_bundles = {
   #   'SUIBottomSheet' => ['SUIBottomSheet/Assets/*.png']
   # }
