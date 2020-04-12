@@ -11,11 +11,18 @@
 		58157156721D3404E7E09A12CFE7DDDB /* Pods-SUIBottomSheet_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC52451AAC6466E59C77485A937DD22C /* Pods-SUIBottomSheet_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62F85FDFF06389C4712B116B00A848CC /* Pods-SUIBottomSheet_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FB1E5190F408E5EAF044BF742E35A4C /* Pods-SUIBottomSheet_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		637A22416927BF291A83E83F4152422C /* SUIBottomSheet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28791A1274AF5CDD6B267674106F5FA2 /* SUIBottomSheet-dummy.m */; };
-		649F906E475DA1100916193C6A4A70F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		90EDB310A05A4E99FC79ABEBEF296F6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		A05EE9DE7065FC1A8A33DEDA712681D8 /* Pods-SUIBottomSheet_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD26EAF54380BA3152AE4AC3601C3DFB /* Pods-SUIBottomSheet_Example-dummy.m */; };
-		B607FFBA12FF2A3CC68D5C7B8B0FF19D /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655AA81B90491E711CEEF28C99624206 /* ReplaceMe.swift */; };
 		BE9A20A541746FDAE930C042016F7C8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		BF4B180D2442AA24006535F7 /* BottomSheetOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4B18072442AA24006535F7 /* BottomSheetOptions.swift */; };
+		BF4B180E2442AA24006535F7 /* BottomSheetState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4B18082442AA24006535F7 /* BottomSheetState.swift */; };
+		BF4B180F2442AA24006535F7 /* BottomSheetLabelModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4B18092442AA24006535F7 /* BottomSheetLabelModifier.swift */; };
+		BF4B18102442AA24006535F7 /* BottomSheetDragState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4B180A2442AA24006535F7 /* BottomSheetDragState.swift */; };
+		BF4B18112442AA24006535F7 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4B180B2442AA24006535F7 /* BottomSheetView.swift */; };
+		BF4B18122442AA24006535F7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4B180C2442AA24006535F7 /* Constants.swift */; };
+		BF4B181A2442B17A006535F7 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4B18192442B17A006535F7 /* BundleExtension.swift */; };
+		BF4B181B2442D719006535F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		BFD984042442F33100AF0268 /* BottomSheet.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BFD984032442F33100AF0268 /* BottomSheet.bundle */; };
 		D5B8C9ECDB968D349973CD6E286AD330 /* SUIBottomSheet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ECE91E010965898E238FDD560735090 /* SUIBottomSheet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -36,9 +43,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BFD983F82442E19F00AF0268 /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0212164F75AE7E403A3794EE49DF7334 /* Pods-SUIBottomSheet_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SUIBottomSheet_Tests-dummy.m"; sourceTree = "<group>"; };
-		1B64EB73311688A8324BD52CD6D0090C /* SUIBottomSheet.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SUIBottomSheet.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1B64EB73311688A8324BD52CD6D0090C /* SUIBottomSheet.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SUIBottomSheet.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2097CC4DB974C67AA1DEA51B16638951 /* Pods-SUIBottomSheet_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SUIBottomSheet_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2566E5A1503036D9C038DC125343017B /* Pods-SUIBottomSheet_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SUIBottomSheet_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		28791A1274AF5CDD6B267674106F5FA2 /* SUIBottomSheet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SUIBottomSheet-dummy.m"; sourceTree = "<group>"; };
@@ -47,28 +67,35 @@
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3BEF114C3ED1380E7E5F834E2C3597D2 /* Pods-SUIBottomSheet_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SUIBottomSheet_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4DE314BB8D1A2E5FDF7F473C7A803D4F /* Pods-SUIBottomSheet_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SUIBottomSheet_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		56D4327E55E72CA6802ECBFEA259AEBC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		56D4327E55E72CA6802ECBFEA259AEBC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		57E9D26E91C6AC5CE81DBF619EAAEEFE /* SUIBottomSheet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SUIBottomSheet-Info.plist"; sourceTree = "<group>"; };
-		655AA81B90491E711CEEF28C99624206 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = SUIBottomSheet/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		6ECE91E010965898E238FDD560735090 /* SUIBottomSheet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SUIBottomSheet-umbrella.h"; sourceTree = "<group>"; };
 		6EDA2F0574EC701D2C7DAEBD496F7CAB /* Pods-SUIBottomSheet_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SUIBottomSheet_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6FDFEDA3BB8C8D762B58421E38F81C3F /* SUIBottomSheet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SUIBottomSheet.debug.xcconfig; sourceTree = "<group>"; };
 		7FB1E5190F408E5EAF044BF742E35A4C /* Pods-SUIBottomSheet_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SUIBottomSheet_Tests-umbrella.h"; sourceTree = "<group>"; };
-		8BE17508064F7A2956875959B2BA2C3F /* Pods_SUIBottomSheet_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SUIBottomSheet_Tests.framework; path = "Pods-SUIBottomSheet_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8EEF8E9C92DDF06FB2AE01F629435C71 /* Pods_SUIBottomSheet_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SUIBottomSheet_Example.framework; path = "Pods-SUIBottomSheet_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BE17508064F7A2956875959B2BA2C3F /* Pods_SUIBottomSheet_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SUIBottomSheet_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EEF8E9C92DDF06FB2AE01F629435C71 /* Pods_SUIBottomSheet_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SUIBottomSheet_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91FA98F15CF044BDB67DA3FD4C438543 /* Pods-SUIBottomSheet_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SUIBottomSheet_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		933160303C50C3BD4819A9912B28DE32 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		933160303C50C3BD4819A9912B28DE32 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A2F5971AC6C63DB4E5CB167B945598AC /* Pods-SUIBottomSheet_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SUIBottomSheet_Tests.modulemap"; sourceTree = "<group>"; };
 		B70DC00A808BF1256A60B8D0435B5D5B /* SUIBottomSheet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SUIBottomSheet-prefix.pch"; sourceTree = "<group>"; };
 		B7BF1B10182E3233EE1B62C1304374BC /* Pods-SUIBottomSheet_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SUIBottomSheet_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BF4B18072442AA24006535F7 /* BottomSheetOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetOptions.swift; sourceTree = "<group>"; };
+		BF4B18082442AA24006535F7 /* BottomSheetState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetState.swift; sourceTree = "<group>"; };
+		BF4B18092442AA24006535F7 /* BottomSheetLabelModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetLabelModifier.swift; sourceTree = "<group>"; };
+		BF4B180A2442AA24006535F7 /* BottomSheetDragState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetDragState.swift; sourceTree = "<group>"; };
+		BF4B180B2442AA24006535F7 /* BottomSheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		BF4B180C2442AA24006535F7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BF4B18192442B17A006535F7 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
+		BFD984032442F33100AF0268 /* BottomSheet.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BottomSheet.bundle; sourceTree = "<group>"; };
 		C837C1F444985857525B14A099BC4F39 /* Pods-SUIBottomSheet_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SUIBottomSheet_Tests-Info.plist"; sourceTree = "<group>"; };
 		CD26EAF54380BA3152AE4AC3601C3DFB /* Pods-SUIBottomSheet_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SUIBottomSheet_Example-dummy.m"; sourceTree = "<group>"; };
 		CD8574B625863E48159546D32F51E052 /* SUIBottomSheet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SUIBottomSheet.modulemap; sourceTree = "<group>"; };
 		D91CA6ACB5EE4245B288C9414A6A531C /* SUIBottomSheet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SUIBottomSheet.release.xcconfig; sourceTree = "<group>"; };
 		DC52451AAC6466E59C77485A937DD22C /* Pods-SUIBottomSheet_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SUIBottomSheet_Example-umbrella.h"; sourceTree = "<group>"; };
 		E213732D8E92BABAD134138F9047BD7A /* Pods-SUIBottomSheet_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SUIBottomSheet_Example-Info.plist"; sourceTree = "<group>"; };
-		E4B9AC6C85F4555670DED6F2DFB591CB /* SUIBottomSheet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SUIBottomSheet.framework; path = SUIBottomSheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B9AC6C85F4555670DED6F2DFB591CB /* SUIBottomSheet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SUIBottomSheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE7D8D31B2ADDCFC417C5D0EDD172A5 /* Pods-SUIBottomSheet_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SUIBottomSheet_Example.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				649F906E475DA1100916193C6A4A70F0 /* Foundation.framework in Frameworks */,
+				BF4B181B2442D719006535F7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,12 +191,27 @@
 		890CFE4BFBA3604B8DDAB7EE17CD63CF /* SUIBottomSheet */ = {
 			isa = PBXGroup;
 			children = (
-				655AA81B90491E711CEEF28C99624206 /* ReplaceMe.swift */,
+				BF4B18062442A619006535F7 /* Source */,
 				17823D68209D6635E576D65B28C27BA7 /* Pod */,
 				DD4272D907B4324F4BBB1A5ADDC35AC6 /* Support Files */,
 			);
 			name = SUIBottomSheet;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		BF4B18062442A619006535F7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				BF4B180A2442AA24006535F7 /* BottomSheetDragState.swift */,
+				BF4B18092442AA24006535F7 /* BottomSheetLabelModifier.swift */,
+				BF4B18072442AA24006535F7 /* BottomSheetOptions.swift */,
+				BF4B18082442AA24006535F7 /* BottomSheetState.swift */,
+				BF4B180B2442AA24006535F7 /* BottomSheetView.swift */,
+				BF4B180C2442AA24006535F7 /* Constants.swift */,
+				BF4B18192442B17A006535F7 /* BundleExtension.swift */,
+				BFD984032442F33100AF0268 /* BottomSheet.bundle */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -280,6 +322,7 @@
 				670EF3D22F97E0584965B395D88475B2 /* Sources */,
 				B43B7A04DCE5A8B2B81147D3B9328C15 /* Frameworks */,
 				95BFF7C8FA84174D5E932FB976D97D3B /* Resources */,
+				BFD983F82442E19F00AF0268 /* Embed PlugIns */,
 			);
 			buildRules = (
 			);
@@ -316,7 +359,21 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1140;
+				TargetAttributes = {
+					04CF7A32559C5F0DB0EB6E636C0BD917 = {
+						ProvisioningStyle = Automatic;
+					};
+					7892BD0E93C4740C2DCF46A4E1206E40 = {
+						DevelopmentTeam = M5447X76VF;
+						LastSwiftMigration = 1140;
+						ProvisioningStyle = Automatic;
+					};
+					929C866214995B269A051A61A1502F55 = {
+						DevelopmentTeam = M5447X76VF;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -343,6 +400,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFD984042442F33100AF0268 /* BottomSheet.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,8 +441,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B607FFBA12FF2A3CC68D5C7B8B0FF19D /* ReplaceMe.swift in Sources */,
+				BF4B180E2442AA24006535F7 /* BottomSheetState.swift in Sources */,
+				BF4B18102442AA24006535F7 /* BottomSheetDragState.swift in Sources */,
 				637A22416927BF291A83E83F4152422C /* SUIBottomSheet-dummy.m in Sources */,
+				BF4B180F2442AA24006535F7 /* BottomSheetLabelModifier.swift in Sources */,
+				BF4B18122442AA24006535F7 /* Constants.swift in Sources */,
+				BF4B180D2442AA24006535F7 /* BottomSheetOptions.swift in Sources */,
+				BF4B18112442AA24006535F7 /* BottomSheetView.swift in Sources */,
+				BF4B181A2442B17A006535F7 /* BundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,19 +474,21 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E48DC0616C59F4A34964CA8D042F3D8 /* Pods-SUIBottomSheet_Example.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SUIBottomSheet_Example/Pods-SUIBottomSheet_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SUIBottomSheet_Example/Pods-SUIBottomSheet_Example.modulemap";
@@ -431,9 +497,12 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -443,27 +512,34 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6FDFEDA3BB8C8D762B58421E38F81C3F /* SUIBottomSheet.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = M5447X76VF;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/SUIBottomSheet/SUIBottomSheet-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SUIBottomSheet/SUIBottomSheet-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SUIBottomSheet/SUIBottomSheet.modulemap";
 				PRODUCT_MODULE_NAME = SUIBottomSheet;
 				PRODUCT_NAME = SUIBottomSheet;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -478,15 +554,18 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = M5447X76VF;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SUIBottomSheet_Tests/Pods-SUIBottomSheet_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SUIBottomSheet_Tests/Pods-SUIBottomSheet_Tests.modulemap";
@@ -495,6 +574,8 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -552,13 +633,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -615,7 +695,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -632,27 +712,33 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D91CA6ACB5EE4245B288C9414A6A531C /* SUIBottomSheet.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = M5447X76VF;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/SUIBottomSheet/SUIBottomSheet-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SUIBottomSheet/SUIBottomSheet-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SUIBottomSheet/SUIBottomSheet.modulemap";
 				PRODUCT_MODULE_NAME = SUIBottomSheet;
 				PRODUCT_NAME = SUIBottomSheet;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -664,19 +750,21 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3BEF114C3ED1380E7E5F834E2C3597D2 /* Pods-SUIBottomSheet_Example.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SUIBottomSheet_Example/Pods-SUIBottomSheet_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SUIBottomSheet_Example/Pods-SUIBottomSheet_Example.modulemap";
@@ -685,9 +773,12 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -702,15 +793,18 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = M5447X76VF;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SUIBottomSheet_Tests/Pods-SUIBottomSheet_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SUIBottomSheet_Tests/Pods-SUIBottomSheet_Tests.modulemap";
@@ -719,6 +813,8 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SUIBottomSheet'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of SUIBottomSheet.'
+  s.summary          = 'Lightweight BottomSheet Built with SwiftUI'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+    'The SUIBottomSheet is built with SwiftUI and allows developers to include a functional bottom sheet with multiple states inside of their application.'
                        DESC
 
   s.homepage         = 'https://github.com/Zain Nadeem/SUIBottomSheet'
@@ -28,10 +28,10 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/Zain Nadeem/SUIBottomSheet.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '13.0'
 
   s.source_files = 'SUIBottomSheet/Classes/**/*'
-  
+  s.resource_bundles = { 'SUIBottomSheet' => ['SUIBottomSheet/BottomSheet.bundle/**/*.*'] }
   # s.resource_bundles = {
   #   'SUIBottomSheet' => ['SUIBottomSheet/Assets/*.png']
   # }
