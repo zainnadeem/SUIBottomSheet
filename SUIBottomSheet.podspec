@@ -29,17 +29,17 @@ Pod::Spec.new do |s|
     'The SUIBottomSheet is built with SwiftUI and allows developers to include a functional bottom sheet with multiple states inside of their application.'
                        DESC
 
-  s.homepage         = 'https://github.com/Zain Nadeem/SUIBottomSheet'
+  s.homepage         = 'https://github.com/ZainNadeem/SUIBottomSheet'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Zain Nadeem' => 'zainlove@me.com' }
-  s.source           = { :git => 'https://github.com/Zain Nadeem/SUIBottomSheet.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/ZainNadeem/SUIBottomSheet.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '13.0'
 
   s.source_files = 'Source/**/*'
-  s.resource_bundles = { 'BottomSheet' => ['SUIBottomSheet/BottomSheet.bundle/**/*.*'] }
+  s.resource_bundles = { 'BottomSheet' => ['SUIBottomSheet/Source/BottomSheet.bundle/**/*.*'] }
   # s.resource_bundles = {
   #   'SUIBottomSheet' => ['SUIBottomSheet/Assets/*.png']
   # }
