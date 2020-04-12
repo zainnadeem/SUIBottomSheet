@@ -1,0 +1,16 @@
+PODS:
+  - SUIBottomSheet (0.1.0)
+
+DEPENDENCIES:
+  - SUIBottomSheet (from `../`)
+
+EXTERNAL SOURCES:
+  SUIBottomSheet:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SUIBottomSheet: a6a48129536aaeb2069554bd55a0aa5824280718
+
+PODFILE CHECKSUM: 3e52542a93ecc66254c6062d84767dd3779fb843
+
+COCOAPODS: 1.9.1

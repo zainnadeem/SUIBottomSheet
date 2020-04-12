@@ -1,0 +1,6 @@
+framework module Pods_SUIBottomSheet_Tests {
+  umbrella header "Pods-SUIBottomSheet_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

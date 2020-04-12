@@ -1,0 +1,6 @@
+framework module Pods_SUIBottomSheet_Example {
+  umbrella header "Pods-SUIBottomSheet_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

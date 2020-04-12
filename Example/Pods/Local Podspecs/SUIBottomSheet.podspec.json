@@ -1,0 +1,22 @@
+{
+  "name": "SUIBottomSheet",
+  "version": "0.1.0",
+  "summary": "A short description of SUIBottomSheet.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Zain Nadeem/SUIBottomSheet",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Zain Nadeem": "zainlove@me.com"
+  },
+  "source": {
+    "git": "https://github.com/Zain Nadeem/SUIBottomSheet.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SUIBottomSheet/Classes/**/*"
+}
