@@ -1,10 +1,9 @@
 # SUIBottomSheet
-This repository allows you to quickly add an expandable bottomSheet to your app using the power of SwiftUI.
 [![Version](https://img.shields.io/cocoapods/v/SUIBottomSheet.svg?style=flat)](https://cocoapods.org/pods/SUIBottomSheet)
 [![License](https://img.shields.io/cocoapods/l/SUIBottomSheet.svg?style=flat)](https://cocoapods.org/pods/SUIBottomSheet)
 [![Platform](https://img.shields.io/cocoapods/p/SUIBottomSheet.svg?style=flat)](https://cocoapods.org/pods/SUIBottomSheet)
-
 ![alt text](https://github.com/zainnadeem/SUIBottomSheet/blob/master/SwiftUI.png)
+This repository allows you to quickly add an expandable bottomSheet to your app using the power of SwiftUI.
 # Getting Started
 
 ## Requirements
