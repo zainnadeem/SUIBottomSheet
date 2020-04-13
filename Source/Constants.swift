@@ -31,9 +31,7 @@ public enum Constants {
     static let bottomSheetBodyInsets = EdgeInsets(top: 0, leading: 1.5, bottom: 2, trailing: 1.5)
     static let bottomSheetDebugInformationInsets = EdgeInsets(top: 15, leading: 0, bottom: 0, trailing: 0)
     //Animation value
-    static let response: Double = 0.55
-    static let dampingFraction: Double = 0.825
-    static let blendDuration: Double = 0
+
     //View Manipulation
     static let bottomSheetCornerRadius: CGFloat = 13
     static let bottomSheetLinearGradientOpacity: Double = 0.6
@@ -41,4 +39,13 @@ public enum Constants {
     static let close = "close"
     static let bottomSheet = "BottomSheet"
     static let bundle = "bundle"
+    
+    //optionsDefaults
+    public static let defaultTitle: String = "My Custom Title"
+    public static let defaultSubtitle: String = "Some more information here"
+    public static let defaultBodyText: String  = "The user of this component can put whatever content they want in here, and it should be scrollable (without causing the sheet to pull up or down)!"
+    public static let defaultResponse: Double = 0.55
+    public static let defaultDampingFraction: Double = 0.825
+    public static let defaultBlendDuration: Double = 0
+    
 }

@@ -1,23 +1,23 @@
 import SwiftUI
 /// BottomSheetView utilized by developer inside of their view
 public struct BottomSheetView: View {
-    /// Tracks the state of the drag gesture, can be 'isdragging' or 'inactive'
+    /// Tracks the state of the drag gesture, can be 'isDragging' or 'inactive'
     @GestureState private var bottomSheetDragState = BottomSheetDragState.inactive
-     /// BottomSheet is initialized with options that contains information about the properties to be displayed
+    /// BottomSheet is initialized with options that contains information about the properties to be displayed
     @ObservedObject var options: BottomSheetOptions
     /// Creates indicator view for the top of the bottomSheet
     private var indicator: some View {
-            RoundedRectangle(cornerRadius: Constants.indicatorCornerRadius)
+        RoundedRectangle(cornerRadius: Constants.indicatorCornerRadius)
             .fill(Color.gray).opacity(Constants.indicatorOpacity)
             .frame(width: Constants.indicatorWidth, height: Constants.indicatorHeight)
     }
-     /// - Initializer:
-       ///     - options:  bottomSheetOptions for the view
-   public init(options: ObservedObject<BottomSheetOptions>) {
+    /// - Initializer:
+    ///     - options:  bottomSheetOptions for the view
+    public init(options: ObservedObject<BottomSheetOptions>) {
         self._options = options
     }
-   ///     -View:  BottomSheet View Layout
-   public var body: some View {
+    ///     -View:  BottomSheet View Layout
+    public var body: some View {
         GeometryReader { geometry in
             ZStack{
                 VStack {
@@ -70,10 +70,8 @@ public struct BottomSheetView: View {
                             Text("Expanded")
                                 .foregroundColor(.black)
                         }
-                        Text("Animation Config").foregroundColor(.black)
-                        Text("{'response': \(Constants.response)").foregroundColor(.black)
-                        Text("'dampingFraction': \(Constants.dampingFraction)").foregroundColor(.black)
-                        Text("'blendDuration': \(Constants.blendDuration)}").foregroundColor(.black)
+                        Text("Animation Config:").foregroundColor(.black)
+                        Text(self.options.animation.description).foregroundColor(.black)
                     }.frame(width: geometry.size.width, height: geometry.size.height, alignment: .top)
                         .padding(Constants.bottomSheetDebugInformationInsets)
                         .background(Color.white)
@@ -83,55 +81,55 @@ public struct BottomSheetView: View {
         }
         .background(self.options.backgroundColor)
         .cornerRadius(Constants.bottomSheetCornerRadius)
-        .animation(.interactiveSpring(response: Constants.response, dampingFraction:Constants.dampingFraction, blendDuration: Constants.blendDuration))
+        .animation(.interactiveSpring(response: Constants.defaultResponse, dampingFraction:Constants.defaultDampingFraction, blendDuration: Constants.defaultBlendDuration))
         .offset(y: self.options.sheetState.rawValue + self.bottomSheetDragState.translation.height)
-        ///Gesture tracking when updated ,
-        .gesture(
-            DragGesture()
-            .updating(self.$bottomSheetDragState) { drag, state, transaction in
-                state = .isDragging(translation: drag.translation)
-            }
-            .onEnded(self.draggingDidEnd)
+            ///Gesture tracking when updated ,
+            .gesture(
+                DragGesture()
+                    .updating(self.$bottomSheetDragState) { drag, state, transaction in
+                        state = .isDragging(translation: drag.translation)
+                }
+                .onEnded(self.draggingDidEnd)
         )
     }
     /// Function that takes in a dragGesture value and assigns a sheetState
     private func draggingDidEnd(drag: DragGesture.Value) {
-         /// This function will utiilize these three variable to determine the stateAbove, the stateBelow & the nearestState
+        /// This function will utilize these three variable to determine the stateAbove, the stateBelow & the nearestState
         let stateAbove: BottomSheetState
         let stateBelow: BottomSheetState
         let nearestState: BottomSheetState
-       /// Based on drag velocity, the predication of the final location:  drag.predictedEndLocation.y
-       /// Current location of the drag gesture: drag.location.y
+        /// Based on drag velocity, the predication of the final location:  drag.predictedEndLocation.y
+        /// Current location of the drag gesture: drag.location.y
         let yDirection = drag.predictedEndLocation.y - drag.location.y
         /// drag.translation = Total translation from start of the drag gesture to current
         /// yDirection = The predicted end y location minus the current y location
-        ///currentSheetLocation:  drag.translation = Sheet postion + distance it has moved
+        ///currentSheetLocation:  drag.translation = Sheet position + distance it has moved
         let currentSheetLocation = self.options.sheetState.rawValue + drag.translation.height
-        ///If the current sheet location is less than or equal to the raw height of collapsed state, the postion above is expanded, position below is collapsed
+        ///If the current sheet location is less than or equal to the raw height of collapsed state, the position above is expanded, position below is collapsed
         if currentSheetLocation <= BottomSheetState.collapsed.rawValue {
-                 stateAbove = .expanded
-                 stateBelow = .collapsed
-        ///If the current sheet location is greater than the raw height of collapsed state, the postion above is expanded, position below is dismissed
-             } else {
-                 stateAbove = .collapsed
-                 stateBelow = .dismissed
-             }
+            stateAbove = .expanded
+            stateBelow = .collapsed
+            ///If the current sheet location is greater than the raw height of collapsed state, the position above is expanded, position below is dismissed
+        } else {
+            stateAbove = .collapsed
+            stateBelow = .dismissed
+        }
         ///If the (current sheet location - the position above) is less than (position below - current sheet location)
-       if (currentSheetLocation - stateAbove.rawValue) < (stateBelow.rawValue - currentSheetLocation) {
-               nearestState = stateAbove
-           } else {
-               nearestState = stateBelow
-           }
+        if (currentSheetLocation - stateAbove.rawValue) < (stateBelow.rawValue - currentSheetLocation) {
+            nearestState = stateAbove
+        } else {
+            nearestState = stateBelow
+        }
         ///check yDirection value and assign the sheetState
         if yDirection > 0 && (self.options.sheetState != .expanded) {
-               self.options.sheetState = stateBelow
-           } else if yDirection < 0 {
+            self.options.sheetState = stateBelow
+        } else if yDirection < 0 {
             self.options.sheetState = stateAbove
-           } else {
+        } else {
             self.options.sheetState  = nearestState
-           }
-     }
-  
+        }
+    }
+    
 }
 
 struct BottomSheetView_Previews: PreviewProvider {
