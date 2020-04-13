@@ -81,7 +81,7 @@ public struct BottomSheetView: View {
         }
         .background(self.options.backgroundColor)
         .cornerRadius(Constants.bottomSheetCornerRadius)
-        .animation(.interactiveSpring(response: Constants.defaultResponse, dampingFraction:Constants.defaultDampingFraction, blendDuration: Constants.defaultBlendDuration))
+        .animation(self.options.animation)
         .offset(y: self.options.sheetState.rawValue + self.bottomSheetDragState.translation.height)
             ///Gesture tracking when updated ,
             .gesture(
